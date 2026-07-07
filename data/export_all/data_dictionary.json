@@ -1,0 +1,287 @@
+{
+  "catalog": "mcp",
+  "schema": "game",
+  "tables": [
+    {
+      "name": "amg_updates",
+      "type": "MANAGED",
+      "comment": "This table contains information about character and other card updates.",
+      "columns": [
+        {
+          "name": "update_key",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique key for the update, usually the calendar year and month in YYYYMM format."
+        },
+        {
+          "name": "effective_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Approximate date when the update was released/effective."
+        },
+        {
+          "name": "update_notes",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Notes about the update."
+        }
+      ]
+    },
+    {
+      "name": "characters",
+      "type": "MANAGED",
+      "comment": "Contains information about the characters in Marvel Crisis Protocol.",
+      "columns": [
+        {
+          "name": "character_id",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis."
+        },
+        {
+          "name": "character_name",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Name of the character on the card."
+        },
+        {
+          "name": "alter_ego",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Name of the charcter's alter ego"
+        },
+        {
+          "name": "threat",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "The *threat* cost of the character."
+        },
+        {
+          "name": "front_health",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Health on the front (healthy) side of the character card."
+        },
+        {
+          "name": "back_health",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Health on the back (injured) side of the character card."
+        },
+        {
+          "name": "extra_power",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Additional power this charcter received in the power phase."
+        },
+        {
+          "name": "leadership_affiliation_id",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "ID of the affilaition this charcter this character leads."
+        },
+        {
+          "name": "leadership_card_id",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "ID for the team tactics cards required for this charcter to have a leadership."
+        },
+        {
+          "name": "gem_bearer",
+          "type": "BOOLEAN",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Indicates if the character can be assigned an Infinity Gem."
+        },
+        {
+          "name": "gem_limit",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "The maximum number of infinity games that can be assigned to this character."
+        },
+        {
+          "name": "effective_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Approximate date when the character was released or the update was released."
+        },
+        {
+          "name": "update_key",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Unique key for the update, usually the calendar year and month in YYYYMM format. Will be *NULL* if the charcter has not been updated."
+        },
+        {
+          "name": "current_version",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "primary_key": false,
+          "comment": "Indicates the current version of the character and should be *TRUE* for the latest version."
+        }
+      ]
+    },
+    {
+      "name": "affiliated_charcters",
+      "type": "MANAGED",
+      "comment": "Matches characters with their affiliations.",
+      "columns": [
+        {
+          "name": "affiliation_name",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Name of the affiliation."
+        },
+        {
+          "name": "character_id",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis."
+        }
+      ]
+    },
+    {
+      "name": "infinity_gems",
+      "type": "MANAGED",
+      "comment": "Contains information about the infinity gems in Marvel Crisis Protocol.",
+      "columns": [
+        {
+          "name": "gem_id",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the  Infinity Gem. Should match the MTC code from Cerebro and Jarvis."
+        },
+        {
+          "name": "gem_name",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Name of the  Infinity Gem."
+        },
+        {
+          "name": "alternate_gem_id",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Alternate ID for the Infinity Gem."
+        },
+        {
+          "name": "color",
+          "type": "STRING",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "The color of the  Infinity Gem."
+        },
+        {
+          "name": "threat",
+          "type": "INT",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "The additional threat cost to take the Infinity Gem."
+        }
+      ]
+    },
+    {
+      "name": "character_updates",
+      "type": "MANAGED",
+      "comment": "Indicates if a charcter was part of a particular update.",
+      "columns": [
+        {
+          "name": "update_key",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique key for the update, usually the calendar year and month in YYYYMM format."
+        },
+        {
+          "name": "character_id",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis."
+        }
+      ]
+    },
+    {
+      "name": "product_codes",
+      "type": "MANAGED",
+      "comment": "Information about MCP products including their release date.",
+      "columns": [
+        {
+          "name": "sku",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the product, usually starts with CP or MCP."
+        },
+        {
+          "name": "release_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false,
+          "comment": "Approximate US release date for the product."
+        }
+      ]
+    },
+    {
+      "name": "affiliations",
+      "type": "MANAGED",
+      "comment": "Contains information about the affiliations in Marvel Crisis Protocol.",
+      "columns": [
+        {
+          "name": "affiliation_name",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Name of the affiliation."
+        }
+      ]
+    },
+    {
+      "name": "product_to_character",
+      "type": "MANAGED",
+      "comment": "Matches products with characters.",
+      "columns": [
+        {
+          "name": "sku",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the product, usually starts with CP or MCP."
+        },
+        {
+          "name": "character_id",
+          "type": "STRING",
+          "nullable": false,
+          "primary_key": true,
+          "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis."
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "child_table": "product_to_character",
+      "child_column": "sku",
+      "parent_table": "product_codes",
+      "parent_column": "sku"
+    }
+  ]
+}
