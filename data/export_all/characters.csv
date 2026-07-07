@@ -1,0 +1,308 @@
+character_id,character_name,alter_ego,threat,front_health,back_health,extra_power,leadership_affiliation_id,leadership_card_id,gem_bearer,gem_limit,effective_date,update_key,current_version
+01620101,Abomination,Emil Blonsky,5,7,7.0,1,,,False,0,2024-11-07,,True
+01910101,Adam Warlock,Adam Warlock,7,7,8.0,0,Guardians of the Galaxy,cosmic_awareness.png,True,2,2026-02-12,,True
+01000101,Agent Venom,Flash Thompson,4,6,6.0,0,,,False,0,2025-05-31,202505,True
+00370101,Amazing Spider-Man,Peter Parker,5,6,6.0,0,Web Warriors,,False,0,2023-09-30,202309,True
+00640101,Ancient One,Ancient One,4,6,6.0,1,,,False,0,2021-09-08,,True
+00280101,Angela,Aldrif Odindottir,5,6,7.0,1,,,False,0,2025-05-31,202505,True
+00260101,Ant-Man,Scott Lang,3,5,5.0,0,,,False,0,2020-09-11,,True
+00760101,Arnim Zola,Arnim Zola,3,6,6.0,0,,,False,0,2022-09-08,,True
+01730101,Avalanche,Dominikos Petrakis,3,6,5.0,0,,,False,0,2025-06-12,,True
+01430101,Baron Helmut Zemo,Helmut Zemo,4,5,6.0,0,Hydra,,False,0,2023-10-12,,True
+00640102,Baron Mordo,Karl Amadeus Mordo,3,6,5.0,0,,,False,0,2021-09-08,,True
+00760102,Baron Strucker,Wolfgang Von Strucker,3,5,5.0,0,Hydra,,False,0,2022-09-08,,True
+00010101,Baron Zemo,Helmut Zemo,3,5,5.0,0,,,False,0,2019-11-14,,True
+30090101,Bastion,Sebastian Gilberti,4,7,6.0,1,Sentinels,,False,0,2026-05-21,,True
+00430101,Beast,Henry McCoy,3,6,5.0,0,,,False,0,2020-11-12,,True
+01300101,Beta Ray Bill,Bill,4,6,5.0,1,,,False,0,2023-02-09,,True
+01120101,Bishop,Lucas Bishop,4,6,5.0,0,,,False,0,2025-05-31,202505,True
+00340101,Black Bolt,Blackagar Boltagon,5,6,9.0,1,Inhumans,,False,0,2023-09-30,202309,True
+00370102,Black Cat,Felicia Hardy,3,5,5.0,0,,,False,0,2023-09-30,202309,True
+00190101,Black Dwarf,Black Dwarf,4,6,8.0,0,,,False,0,2020-06-28,,True
+00070101,Black Panther,T'Challa,4,6,6.0,0,Wakanda,,False,0,2021-11-30,202111,True
+00810101,Black Swan,Black Swan,4,6,6.0,0,,,True,1,2022-06-08,,True
+00010102,Black Widow,Natasha Romanoff,2,4,4.0,0,,,False,0,2019-11-14,,True
+00240101,"Black Widow, Agent of S.H.I.E.L.D.",Natasha Romanoff,3,6,6.0,0,,,False,0,2025-11-30,202511,True
+01520101,Angel,Warren Worthington III,3,5,5.0,0,,,False,0,2024-09-26,,True
+01070101,Apocalypse,En Sabah Nur,6,7,8.0,0,Servants of the Apocalypse,master_of_the_horsement.png;death.png;famine.png;pestilence.png;war.png,False,0,2024-09-26,,True
+01520102,Archangel,Warren Worthington III,4,5,6.0,0,,,False,0,2024-09-26,,True
+00230101,Doctor Strange,Stephen Vincent Strange,5,6,7.0,0,Defenders,,True,1,2025-05-31,202505,True
+00930101,Malekith the Accursed,Malekith,7,9,8.0,1,Cabal,,False,0,2023-09-30,202309,True
+01090101,Maverick,Christoph Nord,3,5,5.0,0,,,False,0,2024-09-12,,True
+01660104,Maximus the Mad,Maximus Boltagon,4,6,6.0,0,Inhumans,,False,0,2025-03-13,,True
+30090103,Omega Sentinel,Karima Shapandar,4,7,6.0,0,,,False,0,2026-05-21,,True
+00200102,Ronan the Accuser,Ronan the Accuser,4,7,7.0,0,,,True,1,2023-09-30,202309,True
+00510102,Sentinel MK4,Sentinel MK4,4,8,6.0,0,,,False,0,2025-11-30,202511,True
+00010109,Spider-Man,Peter Parker,4,6,5.0,0,,,False,0,2019-11-14,,True
+01620102,The Wrecking Crew,"Brian Calusky, Dirk Garthwaite, Eliot Franklin, Henry Camp",4,6,6.0,1,,,False,0,2024-11-07,,True
+00110101,"Thor, Prince of Asgard",Thor Odinson,5,7,8.0,1,Asgard,,False,0,2023-09-30,202309,True
+01090102,Weapon X,James Logan Howlett,3,5,5.0,0,Weapon X,weapon_x_leadership.png,False,0,2024-09-12,,True
+00480101,Blade,Eric Brooks,4,6,6.0,0,Midnight Sons,,False,0,2023-09-30,202309,True
+01290101,Blue Marvel,Adam Brashear,5,7,6.0,0,,,False,0,2026-01-06,,True
+00450101,"Bob, Agent of Hydra",Robert Dobalina,2,3,3.0,0,,,False,0,2021-06-09,,True
+00300101,Bullseye,Benjamin Poindexter,2,4,4.0,0,,,False,0,2025-05-31,202505,True
+00470101,Cable,Nathan Summers,5,7,7.0,1,X-Force,,False,0,2023-09-30,202309,True
+00010103,Captain America,Steve Rogers,4,5,6.0,0,Avengers,,False,0,2021-11-30,202111,True
+00380101,Captain America,Sam Wilson,3,5,5.0,0,Avengers,,False,0,2021-07-07,,True
+01430102,"Captain America, First Avenger",Steve Rogers,4,6,5.0,0,Avengers,,False,0,2023-10-12,,True
+00010104,Captain Marvel,Carol Danvers,4,6,6.0,0,,,False,0,2021-11-30,202111,True
+01430103,"Captain Marvel, Cosmic Avenger",Carol Danvers,5,7,7.0,0,,,False,0,2023-10-12,,True
+00500101,Carnage,Cletus Kasady,4,8,7.0,0,,,False,0,2025-05-31,202505,True
+00530101,Cassandra Nova,Cassandra Nova Xavier,5,7,7.0,1,,,False,0,2025-11-30,202511,True
+00670101,Clea,Clea Strange,3,6,5.0,0,,,False,0,2025-05-31,202505,True
+00570101,Colossus,Piotr Rasputin,4,6,7.0,0,,,False,0,2025-05-31,202505,True
+00150101,Corvus Glaive,Corvus Glaive,4,6,6.0,0,Black Order,first_of_the_black_order_leadership.png,True,1,2021-11-30,202111,True
+00880101,Crimson Dynamo,Dimitri Bukharin,4,6,6.0,0,Winter Guard,,False,0,2022-08-29,,True
+00010105,Crossbones,Brock Rumlow,3,6,5.0,0,,,False,0,2019-11-14,,True
+01430104,"Crossbones, Merciless Merc",Brock Rumlow,3,6,5.0,0,,,False,0,2023-10-12,,True
+00350101,Crystal,Crystalia Amaquelin,3,5,5.0,0,,,False,0,2021-02-11,,True
+00410101,Cyclops,Scott Summers,4,6,6.0,0,Uncanny X-Men,,False,0,2023-09-30,202309,True
+00300102,Daredevil,Matt Murdock,4,5,6.0,0,Defenders,,False,0,2023-09-30,202309,True
+00880102,Darkstar,Laynia Petrovna,3,5,5.0,0,,,False,0,2022-08-29,,True
+00450102,Deadpool,Wade Wilson,3,4,6.0,0,,,False,0,2023-09-30,202309,True
+01430105,"Doc Ock, Sinister Scientist",Otto Octavius,4,6,6.0,0,Spider-Foes,,False,0,2023-10-12,,True
+00010106,Doctor Octopus,Otto Octavius,3,5,6.0,0,,,False,0,2019-11-14,,True
+00670102,"Doctor Strange, Sorcerer Supreme",Stephen Vincent Strange,5,6,6.0,2,,,False,0,2025-05-31,202505,True
+00650101,Doctor Voodoo,Jericho Drumm,4,6,6.0,0,,,False,0,2023-09-30,202309,True
+00470102,Domino,Neena Thurman,3,5,5.0,0,,,False,0,2021-06-09,,True
+00330101,Dormammu,Dormammu,8,10,12.0,0,Dark Dimension,,False,0,2025-11-30,202511,True
+02450101,Dracula,Vlad Dracula,5,7,7.0,0,Thralls of Dracula,thralls_of_dracula.png,False,0,2024-10-31,,True
+00200101,Drax the Destroyer,Drax,3,6,6.0,0,,,False,0,2020-06-10,,True
+00190102,Ebony Maw,Ebony Maw,5,7,6.0,2,,,True,1,2021-11-30,202111,True
+01680101,Echo,Maya Lopez,3,5,5.0,0,,,False,0,2025-10-02,,True
+01560101,Electro,Max Dillon,4,6,6.0,0,,,False,0,2024-05-16,,True
+00790101,Elektra,Elektra Nachios,4,6,5.0,0,,,False,0,2023-09-30,202309,True
+01860101,Elsa Bloodstone,Elsa Bloodstone,4,6,6.0,0,Midnight Sons,,False,0,2025-01-30,,True
+01030101,Emma Frost,Emma Frost,4,6,6.0,0,Hellfire Club,my_hellfire_club_2025.png,False,0,2025-11-30,202511,True
+00280102,Enchantress,Amora,4,6,5.0,1,,,False,0,2021-11-30,202111,True
+01730102,Exodus,Bennet du Paris,5,7,7.0,1,,,False,0,2025-06-12,,True
+02450102,Frankenstein's Monster,Adam,4,7,7.0,0,,,False,0,2024-10-31,,True
+00600101,Gambit,Remy LeBeau,3,5,5.0,0,,,False,0,2025-05-31,202505,True
+00160101,Gamora,Gamora,4,6,6.0,0,,,False,0,2021-11-30,202111,True
+00270101,Ghost Rider,Johnathon Blaze,5,8,7.0,0,,,False,0,2021-11-30,202111,True
+00100101,Ghost-Spider,Gwen Stacy,3,5,5.0,0,,,False,0,2020-08-13,,True
+01660101,Gorgon,Gorgon Petragon,3,6,5.0,0,,,False,0,2025-03-13,,True
+00210101,Green Goblin,Norman Osborn,4,7,5.0,0,Spider-Foes,,False,0,2021-11-30,202111,True
+00170101,Groot,Groot,3,7,7.0,0,,,False,0,2021-11-30,202111,True
+01550101,Gwenom,Gwen Stacy,4,6,7.0,0,,,False,0,2024-05-15,,True
+01370101,Gwenpool,Gwendolyn Poole,4,6,6.0,0,,,False,0,2023-05-11,,True
+00240102,Hawkeye,Clint Barton,3,5,6.0,0,,,False,0,2025-11-30,202511,True
+01020101,"Heimdall, The All-Seeing",Heimdall,3,6,5.0,1,,,False,0,2025-05-31,202505,True
+00120101,"Hela, Queen of Hel",Hela,4,6,4.0,1,,,False,0,2023-09-30,202309,True
+00710101,Honey Badger,Gabrielle Kinney,2,5,4.0,0,,,False,0,2022-02-10,,True
+00650102,Hood,Parker Robbins,3,5,5.0,0,,,False,0,2021-09-08,,True
+00520101,Hulkbuster,Tony Stark,6,13,5.0,1,Avengers,,False,0,2022-01-14,,True
+00960101,Iceman,Bobby Drake,3,5,5.0,0,,,False,0,2024-02-29,,True
+01430106,Invincible Iron Man,Tony Stark,4,6,6.0,0,S.H.I.E.L.D.,,False,0,2023-10-12,,True
+00490101,Iron Fist,Danny Rand,3,5,5.0,1,,,False,0,2021-06-09,,True
+01540101,Iron Lad,Nathaniel Richards,3,6,6.0,0,,,False,0,2026-03-05,,True
+00010107,Iron Man,Tony Stark,3,5,5.0,0,,,False,0,2021-11-30,202111,True
+01540102,Iron Monger,Obadiah Stane,3,6,5.0,0,,,False,0,2026-03-05,,True
+00530102,Jean Grey,Jean Grey,5,6,7.0,1,,,False,0,2023-09-30,202309,True
+00560101,Juggernaut,Cain Marko,5,8,8.0,0,,,False,0,2022-02-10,,True
+01540103,Kang the Conqueror,Nathaniel Richards,6,7,7.0,0,Cabal,,False,0,2026-03-05,,True
+01660102,Karnak,Karnak Mander-Azur,3,5,5.0,0,,,False,0,2025-03-13,,True
+00070102,Killmonger,N'Jadaka,4,6,5.0,0,,,False,0,2019-12-12,,True
+01660103,King Black Bolt,Blackagar Boltagon,6,7,8.0,1,,,False,0,2025-03-13,,True
+00290101,Kingpin,Wilson Fisk,4,7,7.0,0,Criminal Syndicate,,False,0,2021-11-30,202111,True
+01160101,Klaw,Ulysses Klaw,5,7,7.0,0,Criminal Syndicate,,False,0,2023-07-13,,True
+00580101,Kraven the Hunter,Sergei Nikolaevich Kravinoff,3,5,5.0,0,,,False,0,2021-06-23,,True
+01730103,Lady Mastermind,Regan Wyngarde,4,6,5.0,0,,,False,0,2025-06-12,,True
+00910101,Lady Sif,Sif,4,6,6.0,1,,,False,0,2024-08-01,,True
+00580102,Lizard,Curtis Connors,3,6,5.0,0,,,False,0,2021-06-23,,True
+00350102,Lockjaw,Lockjaw,3,6,5.0,0,,,False,0,2021-02-11,,True
+00120102,"Loki, God of Mischief",Loki Laufeyson,4,5,5.0,1,,,True,1,2020-01-30,,True
+00910102,"Loki, Prince of Lies",Loki Laufeyson,5,7,6.0,1,Asgard,,False,0,2024-08-01,,True
+00490102,Luke Cage,Luke Cage,3,6,5.0,0,,,False,0,2021-06-09,,True
+01160102,M'Baku,M'Baku,4,7,6.0,0,Wakanda,,False,0,2023-07-13,,True
+00050101,M.O.D.O.K.,George Tarleton,5,10,4.0,0,,,False,0,2021-11-30,202111,True
+01450101,M.O.D.O.K. Scientist Supreme,George Tarleton,4,7,5.0,0,Criminal Syndicate,,False,0,2023-04-13,,True
+00570102,Magik,Illyana Rasputin,3,6,5.0,0,New Mutants,new_mutants_leadership.png,False,0,2025-05-31,202505,True
+00420101,Magneto,Max Eisenhardt,6,6,8.0,0,Brotherhood of Mutants,,False,0,2020-11-12,,True
+01860102,Man-Thing,Theodore Sallis,3,6,5.0,0,,,False,0,2025-01-30,,True
+00340102,Medusa,Medusalith Amaquelin-Boltagon,4,6,6.0,0,Inhumans,inhuman_queen.png,False,0,2021-11-30,202111,True
+00660101,"Mephisto, Lord of Temptation",Mephisto,5,7,7.0,0,Legion of the Lost,devil's_reckoning.png,False,0,2024-11-07,,True
+00460101,Mister Sinister,Nathaniel Essex,4,6,5.0,0,,,False,0,2021-05-13,,True
+00480102,Moon Knight,Marc Spector,3,5,5.0,0,,,False,0,2021-09-08,,True
+01910102,Moondragon,Heather Douglas,3,6,6.0,0,,,True,1,2026-02-12,,True
+00620101,Ms. Marvel,Kamala Khan,3,5,5.0,0,,,False,0,2022-01-14,,True
+00500102,Mysterio,Quentin Beck,3,6,5.0,0,,,False,0,2021-06-23,,True
+00430102,Mystique,Raven Darkholme,3,5,5.0,0,Brotherhood of Mutants,,False,0,2020-11-12,,True
+02450103,"N'Kantu, the Living Mummy",N'Kantu,3,5,5.0,0,,,False,0,2024-10-31,,True
+01580102,"Namor, the Sub-Mariner",Namor McKenzie,5,7,7.0,1,S.H.I.E.L.D.,invaders_leadership.png,True,1,2024-07-11,,True
+00160102,Nebula,Nebula,2,4,5.0,0,,,False,0,2020-04-23,,True
+00550101,Nick Fury,"Nicholas J. Fury, Jr.",4,7,6.0,0,S.H.I.E.L.D.,,False,0,2025-11-30,202511,True
+00750101,Nick Fury & the Howling Commandos,"Nicholas Fury, Sr., Timothy ""Dum Dum"" Dugan, Gabriel Jones",3,5,6.0,0,,,False,0,2022-09-08,,True
+01120102,Nightcrawler,Kurt Wagner,4,6,5.0,0,,,False,0,2025-05-31,202505,True
+30090102,"Nimrod, the Hunter",Nimrod,5,7,7.0,1,,,False,0,2026-05-21,,True
+01260101,Nova,Richard Rider,5,7,7.0,0,,,False,0,2025-01-30,,True
+00080101,Okoye,Okoye,2,4,4.0,0,,,False,0,2021-11-30,202111,True
+00540101,Omega Red,Arkady Gregorivich Rossovich,4,6,6.0,0,,,False,0,2021-07-07,,True
+00830101,Phoenix,Jean Grey,6,7,10.0,1,,,False,0,2025-06-12,,True
+01510101,Professor X,Charles Xavier,4,6,6.0,0,Uncanny X-Men,,False,0,2025-11-30,202511,True
+01690101,Prowler,Aaron Davis,4,6,6.0,0,,,False,0,2025-10-02,,True
+00150102,Proxima Midnight,Proxima Midnight,3,5,5.0,0,,,False,0,2021-11-30,202111,True
+01030102,Psylocke,Elizabeth Braddock,4,6,6.0,0,,,False,0,2025-11-30,202511,True
+00320101,Punisher,Frank Castle,3,6,5.0,0,,,False,0,2020-09-09,,True
+00820101,Pyro,St. John Allerdyce,3,5,5.0,0,,,False,0,2022-12-08,,True
+01910103,Quasar,Phylla-Vell,4,7,6.0,0,,,False,0,2026-02-12,,True
+00630101,Quicksilver,Pietro Maximoff,3,5,5.0,0,,,False,0,2021-05-05,,True
+00890101,Red Guardian,Nikolai Krylenko,3,5,6.0,0,,,False,0,2022-08-29,,True
+00010108,Red Skull,Johann Schmidt,4,6,6.0,0,Cabal,,False,0,2019-11-14,,True
+00740101,"Red Skull, Master of Hydra",Johann Schmidt,5,7,6.0,0,Hydra,,False,0,2022-10-13,,True
+01430107,"Red Skull, Master of the World",Johann Schmidt,4,6,6.0,0,Cabal,,False,0,2023-10-12,,True
+01540104,Rescue,Pepper Potts,3,5,6.0,0,,,False,0,2026-03-05,,True
+00980101,Rhino,Aleksei Sytsevich,4,7,6.0,0,,,False,0,2023-01-12,,True
+00170102,Rocket Raccoon,Rocket Raccoon,2,3,3.0,0,,,False,0,2021-11-30,202111,True
+00600102,Rogue,Anna Marie LeBeau,4,6,6.0,0,,,False,0,2022-02-10,,True
+01680102,Ronin,Clint Barton,4,6,6.0,0,,,False,0,2025-10-02,,True
+00400101,Sabretooth,Victor Creed,4,6,6.0,0,,,False,0,2020-11-12,,True
+01560102,Sandman,Flint Marko,4,6,7.0,0,,,False,0,2024-05-16,,True
+01550102,Scarlet Spider,Ben Reilly,4,6,5.0,0,,,False,0,2024-05-15,,True
+00630102,Scarlet Witch,Wanda Maximoff,5,6,6.0,0,,,False,0,2021-05-05,,True
+00510101,Sentinel MK4,Sentinel MK4,4,8,6.0,0,,,False,0,2025-11-30,202511,True
+01600101,Sentinel Prime MK4,Sentinel Prime MK4,5,9,7.0,0,Sentinels,,False,0,2025-11-30,202511,True
+01510102,Shadow King,Amahl Farouk,5,6,6.0,1,,,False,0,2024-02-29,,True
+00960102,Shadowcat,"Katherine ""Kitty"" Pryde",3,5,5.0,0,,,False,0,2024-02-29,,True
+00790102,Shadowland Daredevil,Matt Murdock,4,6,7.0,0,Criminal Syndicate,,False,0,2022-03-25,,True
+00690101,Shang-Chi,Zheng Shang-Chi,4,5,6.0,0,,,False,0,2024-07-11,,True
+01560103,Shocker,Herman Schultz,3,5,5.0,0,,,False,0,2024-05-16,,True
+00080102,Shuri,Shuri,3,5,5.0,0,,,False,0,2021-11-30,202111,True
+01700101,Silk,Cindy Moon,4,6,5.0,0,,,False,0,2025-10-02,,True
+00690102,Silver Sable,Silvija Sablinova,4,5,6.0,0,,,False,0,2024-07-11,,True
+00610101,Sin,Sinthea Schmidt,3,4,6.0,0,Cabal,,False,0,2021-05-05,,True
+01020102,"Skurge, The Executioner",Skurge,3,6,5.0,1,,,False,0,2022-08-06,,True
+01430108,Spectacular Spider-Man,Peter Parker,3,5,5.0,0,,,False,0,2023-10-12,,True
+01290102,Spectrum,Monica Rambeau,4,6,6.0,0,Mighty Avengers,,False,0,2026-01-06,,True
+01700102,Spider-Ham,Peter Porker,2,3,3.0,0,,,False,0,2025-10-02,,True
+00100102,Spider-Man,Miles Morales,3,5,5.0,0,Web Warriors,,False,0,2020-08-13,,True
+01690102,Spider-Man 2099,Miguel O'Hara,5,7,6.0,0,,,False,0,2025-10-02,,True
+01700103,Spider-Man Noir,Peter Parker Earth-90214,3,5,5.0,0,,,False,0,2025-10-02,,True
+01000102,Spider-Woman,Jessica Drew,4,6,5.0,0,,,False,0,2023-02-09,,True
+01370102,Squirrel Girl,Doreen Greene,4,6,5.0,0,,,False,0,2023-05-11,,True
+00180101,Star-Lord,Peter Quill,3,6,6.0,0,Guardians of the Galaxy,,True,1,2025-11-30,202511,True
+00770101,"Steve Rogers, Captain America",Steve Rogers,4,6,5.0,0,S.H.I.E.L.D.,invaders_leadership.png,False,0,2022-09-08,,True
+00410102,Storm,Ororo Munroe,3,5,5.0,0,Uncanny X-Men,,False,0,2023-09-30,202309,True
+01530101,Sunspot,Roberto da Costa,4,6,6.0,0,,,False,0,2024-09-12,,True
+00810102,Supergiant,Supergiant,3,5,5.0,0,,,True,1,2022-06-08,,True
+00320102,Taskmaster,Anthony Masters,3,6,5.0,0,,,False,0,2023-09-30,202309,True
+00250107,"Thanos, the Mad Titan",Thanos,6,8,9.0,0,Black Order,,True,2,2025-02-28,202502,True
+01430109,The Black Widow,Natasha Romanoff,4,6,5.0,0,,,False,0,2023-10-12,,True
+00820102,The Blob,Fred Dukes,3,6,6.0,0,,,False,0,2022-12-08,,True
+00910103,The Mighty Thor,Jane Foster,5,8,6.0,1,Asgard,,False,0,2024-08-01,,True
+00770102,The Original Human Torch,Jim Hammond,3,5,5.0,0,,,False,0,2022-09-08,,True
+00910104,"Thor, Hero of Midgard",Thor Odinson,6,9,8.0,1,,,False,0,2025-02-28,202502,True
+01680103,Tigra,Greer Nelson,4,6,6.0,0,,,False,0,2025-10-02,,True
+00420102,Toad,Mortimer Toynbee,2,4,4.0,0,,,False,0,2025-05-31,202505,True
+01300102,Ulik,Ulik,5,7,7.0,1,,,False,0,2023-02-09,,True
+01690103,Ultimate Spider-Man,Miles Morales,4,6,5.0,0,,,False,0,2025-10-02,,True
+00010110,Ultron,Ultron,4,6,5.0,0,,,False,0,2021-11-30,202111,True
+01430110,"Ultron, Metal Tyrant",Ultron,5,8,6.0,0,,,False,0,2023-10-12,,True
+00890102,Ursa Major,Mikhail Ursus,4,7,7.0,0,,,False,0,2022-08-29,,True
+00110102,Valkyrie,Brunhilde,3,6,5.0,1,,,False,0,2021-11-30,202111,True
+00940101,Valkyrie and Elendil,Valkyrie,4,6,6.0,1,,,False,0,2026-02-12,,True
+00090101,Venom,Eddie Brock,4,7,6.0,0,,,False,0,2019-12-12,,True
+00610102,Viper,Ophelia Sarkissian,3,5,5.0,0,,,False,0,2021-05-05,,True
+00130101,Vision,Victor Shade,4,6,6.0,0,,,False,0,2020-03-05,,True
+01560104,Vulture,Adrian Toomes,3,5,5.0,0,,,False,0,2024-05-16,,True
+00380102,War Machine,James Rhodes,3,5,5.0,0,,,False,0,2021-07-07,,True
+01530102,Warlock,Warlock,3,5,5.0,0,,,False,0,2024-09-12,,True
+00940102,Warriors Three,"Fandral, Hogun, Valstagg",3,5,5.0,1,,,False,0,2026-02-12,,True
+00260102,Wasp,Janet Van Dyne,3,5,5.0,0,,,False,0,2020-09-11,,True
+02450104,Werewolf By Night,Jack Russell,5,7,7.0,0,,,False,0,2024-10-31,,True
+00130102,Winter Soldier,"James ""Bucky"" Barnes",3,5,6.0,0,,,False,0,2023-09-30,202309,True
+01430111,"Winter Soldier, Operative","James ""Bucky"" Barnes",4,6,5.0,0,,,False,0,2023-10-12,,True
+00400102,Wolverine,James Logan Howlett,4,7,5.0,0,Weapon X,weapon_x_leadership.png,False,0,2023-09-30,202309,True
+00230102,Wong,Wong,2,4,4.0,0,,,False,0,2023-09-30,202309,True
+00710102,X-23,Laura Kinney,3,5,5.0,0,Weapon X,weapon_x_leadership.png,False,0,2025-05-31,202505,True
+01260102,Yondu,Yondu Udonta,4,7,6.0,0,,,False,0,2025-11-30,202511,True
+00040101,Hulk,Bruce Banner,6,20,,2,,,False,0,2021-11-30,202111,True
+00390101,She-Hulk,Jennifer Walters,6,20,,1,A-Force,,False,0,2021-01-08,,True
+01440101,The Immortal Hulk,Bruce Banner,7,15,,2,,,False,0,2023-04-13,,True
+01000101,Agent Venom,Flash Thompson,4,6,6.0,0,,,False,0,2023-02-09,,False
+00370101,Amazing Spider-Man,Peter Parker,5,6,6.0,0,Web Warriors,,False,0,2021-06-23,,False
+00280101,Angela,Aldrif Odindottir,5,6,7.0,1,,,False,0,2021-01-21,,False
+01120101,Bishop,Lucas Bishop,4,6,5.0,0,,,False,0,2024-02-29,,False
+00370102,Black Cat,Felicia Hardy,3,5,5.0,0,,,False,0,2021-06-23,,False
+00070101,Black Panther,T'Challa,4,6,6.0,0,Wakanda,,False,0,2019-12-12,,False
+00480101,Blade,Eric Brooks,4,6,6.0,0,Midnight Sons,,False,0,2021-09-08,,False
+00010103,Captain America,Steve Rogers,4,5,6.0,0,Avengers,,False,0,2019-11-14,,False
+00010104,Captain Marvel,Carol Danvers,4,6,6.0,0,,,False,0,2019-11-14,,False
+00150101,Corvus Glaive,Corvus Glaive,4,6,6.0,0,Black Order,first_of_the_black_order_leadership.png,True,1,2020-07-31,,False
+00410101,Cyclops,Scott Summers,4,6,6.0,0,Uncanny X-Men,,False,0,2020-11-12,,False
+00300102,Daredevil,Matt Murdock,4,5,6.0,0,Defenders,,False,0,2020-10-22,,False
+00450102,Deadpool,Wade Wilson,3,4,6.0,0,,,False,0,2021-06-09,,False
+00670102,"Doctor Strange, Sorcerer Supreme",Stephen Vincent Strange,5,6,6.0,2,,,False,0,2021-09-08,,False
+00650101,Doctor Voodoo,Jericho Drumm,4,6,6.0,0,,,False,0,2021-09-08,,False
+00330101,Dormammu,Dormammu,8,10,12.0,0,Dark Dimension,,False,0,2021-09-08,,False
+00790101,Elektra,Elektra Nachios,4,6,5.0,0,,,False,0,2022-03-25,,False
+00280102,Enchantress,Amora,4,6,5.0,1,,,False,0,2021-01-21,,False
+00600101,Gambit,Remy LeBeau,3,5,5.0,0,,,False,0,2022-02-10,,False
+00210101,Green Goblin,Norman Osborn,4,7,5.0,0,Spider-Foes,,False,0,2020-08-13,,False
+00170101,Groot,Groot,3,7,7.0,0,,,False,0,2020-03-12,,False
+01020101,"Heimdall, The All-Seeing",Heimdall,3,6,5.0,1,,,False,0,2022-08-06,,False
+00120101,"Hela, Queen of Hel",Hela,4,6,4.0,1,,,False,0,2020-01-30,,False
+00010107,Iron Man,Tony Stark,3,5,5.0,0,,,False,0,2019-11-14,,False
+00530102,Jean Grey,Jean Grey,5,6,7.0,1,,,False,0,2021-07-07,,False
+00290101,Kingpin,Wilson Fisk,4,7,7.0,0,Criminal Syndicate,,False,0,2020-10-22,,False
+00050101,M.O.D.O.K.,George Tarleton,5,10,4.0,0,,,False,0,2019-11-14,,False
+00340102,Medusa,Medusalith Amaquelin-Boltagon,4,6,6.0,0,Inhumans,inhuman_queen.png,False,0,2021-02-11,,False
+01120102,Nightcrawler,Kurt Wagner,4,6,5.0,0,,,False,0,2024-02-29,,False
+00080101,Okoye,Okoye,2,4,4.0,0,,,False,0,2019-12-12,,False
+00150102,Proxima Midnight,Proxima Midnight,3,5,5.0,0,,,False,0,2020-07-31,,False
+00170102,Rocket Raccoon,Rocket Raccoon,2,3,3.0,0,,,False,0,2020-03-12,,False
+00080102,Shuri,Shuri,3,5,5.0,0,,,False,0,2019-12-12,,False
+00410102,Storm,Ororo Munroe,3,5,5.0,0,Uncanny X-Men,,False,0,2020-11-12,,False
+00320102,Taskmaster,Anthony Masters,3,6,5.0,0,,,False,0,2020-09-09,,False
+00910104,"Thor, Hero of Midgard",Thor Odinson,6,9,8.0,1,,,False,0,2024-08-01,,False
+00010110,Ultron,Ultron,4,6,5.0,0,,,False,0,2019-11-14,,False
+00110102,Valkyrie,Brunhilde,3,6,5.0,1,,,False,0,2020-01-30,,False
+00230102,Wong,Wong,2,4,4.0,0,,,False,0,2020-09-10,,False
+00710102,X-23,Laura Kinney,3,5,5.0,0,Weapon X,weapon_x_leadership.png,False,0,2022-02-10,,False
+00040101,Hulk,Bruce Banner,6,20,,2,,,False,0,2019-11-14,,False
+00300101,Bullseye,Benjamin Poindexter,2,4,4.0,0,,,False,0,2021-11-30,202111,False
+00570101,Colossus,Piotr Rasputin,4,6,7.0,0,,,False,0,2023-09-30,202309,False
+00250107,"Thanos, the Mad Titan",Thanos,6,8,9.0,0,Black Order,,True,2,2023-09-30,202309,False
+00130102,Winter Soldier,"James ""Bucky"" Barnes",3,5,6.0,0,,,False,0,2021-11-30,202111,False
+00570101,Colossus,Piotr Rasputin,4,6,7.0,0,,,False,0,2022-02-10,,False
+00250107,"Thanos, the Mad Titan",Thanos,6,8,9.0,0,Black Order,,True,2,2020-07-09,,False
+00130102,Winter Soldier,"James ""Bucky"" Barnes",3,5,6.0,0,,,False,0,2020-03-05,,False
+00180101,Star-Lord,Peter Quill,3,6,5.0,0,Guardians of the Galaxy,,True,1,2021-11-30,202111,False
+00180101,Star-Lord,Peter Quill,3,6,5.0,0,Guardians of the Galaxy,,True,1,2020-03-12,,False
+01030101,Emma Frost,Emma Frost,4,6,6.0,0,Hellfire Club,my_hellfire_club_2025.png,False,0,2023-03-09,,False
+10030101,"Logan, The Wolverine",James Logan Howlett,4,6,6.0,0,Weapon X,weapon_x_leadership.png,False,0,2022-12-08,,True
+00400102,Wolverine,James Logan Howlett,4,7,5.0,0,Weapon X,weapon_x_leadership.png,False,0,2020-11-12,,False
+00570102,Magik,Illyana Rasputin,3,5,5.0,0,New Mutants,new_mutants_leadership.png,False,0,2022-02-10,,False
+00240101,"Black Widow, Agent of S.H.I.E.L.D.",Natasha Romanoff,3,5,5.0,0,,,False,0,2020-05-06,,False
+00230101,Doctor Strange,Stephen Vincent Strange,5,6,7.0,0,Defenders,,True,1,2020-09-10,,False
+01600101,Sentinel Prime MK4,Sentinel Prime MK4,5,10,8.0,0,Sentinels,,False,0,2022-10-13,,False
+00510102,Sentinel MK4,Sentinel MK4,4,7,6.0,0,,,False,0,2022-10-13,,False
+00510101,Sentinel MK4,Sentinel MK4,4,7,6.0,0,,,False,0,2022-10-13,,False
+00550101,Nick Fury,"Nicholas J. Fury, Jr.",4,6,5.0,0,S.H.I.E.L.D.,,False,0,2022-03-25,,False
+00110101,"Thor, Prince of Asgard",Thor Odinson,5,6,8.0,1,Asgard,,False,0,2020-01-30,,False
+01510101,Professor X,Charles Xavier,4,6,5.0,0,Uncanny X-Men,,False,0,2024-02-29,,False
+10030102,"Sabretooth, Apex Predator",Victor Creed,4,7,6.0,0,,,False,0,2022-12-08,,True
+00900101,Cosmic Ghost Rider,Frank Castle,6,9,7.0,0,,,False,0,2025-05-31,202505,True
+01580101,"Black Panther, Chosen of Bast",T'Challa,3,5,5.0,0,,,False,0,2024-07-11,,True
+00340101,Black Bolt,Blackagar Boltagon,5,5,9.0,1,Inhumans,,False,0,2021-02-11,,False
+10040101,"Killmonger, Usurper",N'Jadaka,4,6,6.0,0,Wakanda,,False,0,2024-02-01,,True
+00930101,Malekith the Accursed,Malekith,7,10,8.0,1,Cabal,,False,0,2022-08-11,,False
+00530101,Cassandra Nova,Cassandra Nova Xavier,5,7,7.0,1,,,False,0,2021-07-07,,False
+00200102,Ronan the Accuser,Ronan the Accuser,4,6,6.0,0,,,True,1,2020-06-10,,False
+10040102,King T'Challa,T'Challa,5,7,7.0,0,Wakanda,,False,0,2024-02-01,,True
+00900101,Cosmic Ghost Rider,Frank Castle,6,9,7.0,0,,,False,0,2023-07-13,,False
+20230101,Prime Sentinel,Prime Sentinel,3,6,6.0,0,,,False,0,2026-06-11,,True
+00300101,Bullseye,Benjamin Poindexter,3,5,5.0,0,,,False,0,2020-10-22,,False
+00470101,Cable,Nathan Summers,5,6,7.0,1,X-Force,,False,0,2021-06-09,,False
+20230102,Prime Sentinel,Prime Sentinel,3,6,6.0,0,,,False,0,2026-06-11,,True
+00270101,Ghost Rider,Johnathon Blaze,5,7,6.0,0,,,False,0,2020-09-11,,False
+01030102,Psylocke,Elizabeth Braddock,4,6,5.0,0,,,False,0,2023-03-09,,False
+T0000001,Jubilee,Jubilation Lee,2,4,4.0,0,,,False,0,2026-03-26,,True
+00420102,Toad,Mortimer Toynbee,2,5,3.0,0,,,False,0,2020-11-12,,False
+00500101,Carnage,Cletus Kasady,4,7,7.0,0,,,False,0,2021-06-23,,False
+00240102,Hawkeye,Clint Barton,3,4,5.0,0,,,False,0,2020-05-06,,False
+00190102,Ebony Maw,Ebony Maw,5,7,4.0,2,,,True,1,2020-06-28,,False
+01260102,Yondu,Yondu Udonta,4,6,5.0,0,,,False,0,2025-01-30,,False
+20130101,Gladiator,Kallark,6,9,9.0,1,,,False,0,2025-03-13,,True
+00670101,Clea,Clea Strange,3,6,5.0,0,,,False,0,2021-09-08,,False
+00160101,Gamora,Gamora,4,5,5.0,0,,,False,0,2020-04-23,,False

@@ -1,0 +1,551 @@
+{
+  "datasets": [
+    {
+      "name": "87a74e83",
+      "displayName": "characters",
+      "config": {
+        "source": "mcp.game.characters",
+        "measures": [
+          {
+            "name": "Count",
+            "expr": "COUNT(DISTINCT source.character_id)",
+            "comment": "Count of distinct characters, avoiding double-counting when characters have multiple affiliations.",
+            "displayName": "Count"
+          },
+          {
+            "displayName": "Average Health - Front",
+            "format": {
+              "type": "number",
+              "decimalPlaces": {
+                "type": "exact",
+                "places": 2.0
+              },
+              "abbreviation": "none",
+              "hideGroupSeparator": false
+            },
+            "name": "Average Health - Front",
+            "expr": "AVG(source.front_health)",
+            "comment": "Average health on the front side of the card."
+          },
+          {
+            "displayName": "Average Health - Back",
+            "format": {
+              "type": "number",
+              "decimalPlaces": {
+                "type": "exact",
+                "places": 2.0
+              },
+              "abbreviation": "none",
+              "hideGroupSeparator": false
+            },
+            "name": "Average Health - Back",
+            "expr": "AVG(source.back_health)",
+            "comment": "Average health on the back side of the card."
+          },
+          {
+            "displayName": "Average Health",
+            "format": {
+              "type": "number",
+              "decimalPlaces": {
+                "type": "exact",
+                "places": 2.0
+              },
+              "abbreviation": "none",
+              "hideGroupSeparator": false
+            },
+            "name": "Average Health",
+            "expr": "AVG(`Total Health`)",
+            "comment": "Average total health for characters."
+          },
+          {
+            "displayName": "Average Threat",
+            "format": {
+              "type": "number",
+              "decimalPlaces": {
+                "type": "exact",
+                "places": 2.0
+              },
+              "abbreviation": "none",
+              "hideGroupSeparator": false
+            },
+            "name": "Average Threat",
+            "expr": "AVG(source.threat)",
+            "comment": "Average threat of characters."
+          }
+        ],
+        "version": "1.1",
+        "dimensions": [
+          {
+            "name": "character_id",
+            "expr": "source.character_id",
+            "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis.",
+            "displayName": "Character Id"
+          },
+          {
+            "name": "charcter_name",
+            "expr": "source.charcter_name",
+            "comment": "Name of the character on the card.",
+            "displayName": "Charcter Name"
+          },
+          {
+            "name": "alter_ego",
+            "expr": "source.alter_ego",
+            "comment": "Name of the charcter's alter ego",
+            "displayName": "Alter Ego"
+          },
+          {
+            "name": "threat",
+            "expr": "source.threat",
+            "comment": "The *threat* cost of the character.",
+            "displayName": "Threat"
+          },
+          {
+            "name": "front_health",
+            "expr": "source.front_health",
+            "comment": "Health on the front (healthy) side of the character card.",
+            "displayName": "Front Health"
+          },
+          {
+            "name": "back_health",
+            "expr": "source.back_health",
+            "comment": "Health on the back (injured) side of the character card.",
+            "displayName": "Back Health"
+          },
+          {
+            "name": "extra_power",
+            "expr": "source.extra_power",
+            "comment": "Additional power this charcter received in the power phase.",
+            "displayName": "Extra Power"
+          },
+          {
+            "name": "leadership_affiliation_id",
+            "expr": "source.leadership_affiliation_id",
+            "comment": "ID of the affilaition this charcter this character leads.",
+            "displayName": "Leadership Affiliation Id"
+          },
+          {
+            "name": "leadership_card_id",
+            "expr": "source.leadership_card_id",
+            "comment": "ID for the team tactics cards required for this charcter to have a leadership.",
+            "displayName": "Leadership Card Id"
+          },
+          {
+            "name": "gem_bearer",
+            "expr": "source.gem_bearer",
+            "comment": "Indicates if the character can be assigned an Infinity Gem.",
+            "displayName": "Gem Bearer"
+          },
+          {
+            "name": "gem_limit",
+            "expr": "source.gem_limit",
+            "comment": "The maximum number of infinity games that can be assigned to this character.",
+            "displayName": "Gem Limit"
+          },
+          {
+            "name": "Total Health",
+            "expr": "COALESCE(front_health,0)+COALESCE(back_health,0)",
+            "comment": "Combined health of the character.",
+            "displayName": "Total Health"
+          },
+          {
+            "name": "update_key",
+            "expr": "character_updates.update_key",
+            "comment": "Unique key for the update, usually the calendar year and month in YYYYMM format."
+          },
+          {
+            "name": "effective_date",
+            "expr": "character_updates.amg_updates.effective_date",
+            "comment": "Approximate date when the update was released/effective.",
+            "displayName": "Character Update"
+          },
+          {
+            "name": "affiliation_name",
+            "expr": "affiliated_charcters.affiliation_name",
+            "comment": "Name of the affiliation.",
+            "displayName": "Affiliation"
+          }
+        ],
+        "joins": [
+          {
+            "name": "character_updates",
+            "source": "mcp.game.character_updates",
+            "on": "source.character_id = character_updates.character_id",
+            "joins": [
+              {
+                "name": "amg_updates",
+                "source": "mcp.game.amg_updates",
+                "on": "character_updates.update_key = amg_updates.update_key"
+              }
+            ]
+          },
+          {
+            "name": "affiliated_charcters",
+            "source": "mcp.game.affiliated_charcters",
+            "on": "source.character_id = affiliated_charcters.character_id"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "473355df",
+      "displayName": "Character Health",
+      "layout": [
+        {
+          "widget": {
+            "name": "b58a22cf",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "Total Health",
+                      "expression": "`Total Health`"
+                    },
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": false
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Total Health",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "count(*)",
+                  "displayName": "Characters",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 8,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ae969f24",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "threat",
+                      "expression": "`threat`"
+                    },
+                    {
+                      "name": "measure(Average Health)",
+                      "expression": "MEASURE(`Average Health`)"
+                    },
+                    {
+                      "name": "measure(Average Health - Front)",
+                      "expression": "MEASURE(`Average Health - Front`)"
+                    },
+                    {
+                      "name": "measure(Average Health - Back)",
+                      "expression": "MEASURE(`Average Health - Back`)"
+                    },
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    }
+                  ],
+                  "cubeGroupingSets": {
+                    "sets": [
+                      {},
+                      {
+                        "fieldNames": [
+                          "threat"
+                        ]
+                      }
+                    ]
+                  },
+                  "disaggregated": false,
+                  "orders": [
+                    {
+                      "direction": "ASC",
+                      "expression": "`threat`"
+                    }
+                  ]
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pivot",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "threat",
+                    "displayName": "Character Threat"
+                  }
+                ],
+                "cell": {
+                  "type": "multi-cell",
+                  "fields": [
+                    {
+                      "fieldName": "measure(Average Health)",
+                      "cellType": "text"
+                    },
+                    {
+                      "fieldName": "measure(Average Health - Front)",
+                      "cellType": "text",
+                      "displayName": "Front Average"
+                    },
+                    {
+                      "fieldName": "measure(Average Health - Back)",
+                      "cellType": "text",
+                      "displayName": "Back Average"
+                    },
+                    {
+                      "fieldName": "measure(count)",
+                      "cellType": "text",
+                      "displayName": "Characters"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 8,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "charcter-updates",
+            "queries": [
+              {
+                "name": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_monthly(effective_date)",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "monthly(effective_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `effective_date`)"
+                    },
+                    {
+                      "name": "monthly(effective_date)_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Charcter Updates"
+              },
+              "scale": {
+                "type": "categorical",
+                "sort": {
+                  "by": "natural-order-reversed"
+                }
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "monthly(effective_date)",
+                    "displayName": "MONTHLY(effective_date)",
+                    "queryName": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_monthly(effective_date)"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "affiliations",
+            "queries": [
+              {
+                "name": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_affiliation_name",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "affiliation_name",
+                      "expression": "`affiliation_name`"
+                    },
+                    {
+                      "name": "affiliation_name_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Affiliations"
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "affiliation_name",
+                    "queryName": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_affiliation_name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 0,
+            "width": 4,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "charct1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "charcter_name",
+                      "expression": "`charcter_name`"
+                    },
+                    {
+                      "name": "affiliation_name",
+                      "expression": "`affiliation_name`"
+                    },
+                    {
+                      "name": "character_id",
+                      "expression": "`character_id`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Charcters"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "charcter_name"
+                  },
+                  {
+                    "fieldName": "affiliation_name"
+                  },
+                  {
+                    "fieldName": "character_id"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 1,
+            "width": 4,
+            "height": 11
+          }
+        },
+        {
+          "widget": {
+            "name": "fc95fed5",
+            "queries": [
+              {
+                "name": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_alter_ego",
+                "query": {
+                  "datasetName": "87a74e83",
+                  "fields": [
+                    {
+                      "name": "alter_ego",
+                      "expression": "`alter_ego`"
+                    },
+                    {
+                      "name": "alter_ego_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "alter_ego",
+                    "queryName": "dashboards/01f153234dea1a2b998d8534294db946/datasets/01f153235e2916c48564e357d49d6a63_alter_ego"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 1
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}

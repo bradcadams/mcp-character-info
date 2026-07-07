@@ -1,0 +1,315 @@
+{
+  "datasets": [
+    {
+      "name": "07739ab6",
+      "displayName": "Untitled dataset",
+      "config": {
+        "version": "1.1",
+        "source": "SELECT\n   c.character_id\n  ,c.character_name\n  ,c.alter_ego\n  ,c.threat\n  ,c.front_health\n  ,c.back_health\n  ,coalesce(c.front_health,0) + coalesce(c.back_health,0) as total_health\n  ,ac.affiliation_name\n  ,a.effective_date Update_Effective_Date\n  ,date_format(a.effective_date, 'yyyy MMMM') Character_Update\nFROM \n  mcp.game.characters c\n  LEFT JOIN mcp.game.affiliated_charcters ac\n    ON c.character_id = ac.character_id\n  LEFT JOIN mcp.game.character_updates cu\n    ON c.character_id = cu.character_id\n  LEFT JOIN mcp.game.amg_updates a \n    ON cu.update_key = a.update_key",
+        "dimensions": [
+          {
+            "name": "character_id",
+            "expr": "source.character_id",
+            "comment": "Unique identifier for the character. Should match the MTC code from Cerebro and Jarvis.",
+            "displayName": "Character Id"
+          },
+          {
+            "name": "character_name",
+            "expr": "source.character_name",
+            "comment": "Name of the character on the card.",
+            "displayName": "Character Name"
+          },
+          {
+            "name": "alter_ego",
+            "expr": "source.alter_ego",
+            "comment": "Name of the character's alter ego",
+            "displayName": "Alter Ego"
+          },
+          {
+            "name": "threat",
+            "expr": "source.threat",
+            "comment": "The *threat* cost of the character.",
+            "displayName": "Threat"
+          },
+          {
+            "name": "front_health",
+            "expr": "source.front_health",
+            "comment": "Health on the front (healthy) side of the character card.",
+            "displayName": "Front Health"
+          },
+          {
+            "name": "back_health",
+            "expr": "source.back_health",
+            "comment": "Health on the back (injured) side of the character card.",
+            "displayName": "Back Health"
+          },
+          {
+            "name": "total_health",
+            "expr": "source.total_health",
+            "displayName": "Total Health"
+          },
+          {
+            "name": "affiliation_name",
+            "expr": "source.affiliation_name",
+            "comment": "Name of the affiliation.",
+            "displayName": "Affiliation Name"
+          },
+          {
+            "name": "Update_Effective_Date",
+            "expr": "source.Update_Effective_Date",
+            "comment": "Approximate date when the update was released/effective.",
+            "displayName": "Update Effective Date"
+          },
+          {
+            "name": "Character_Update",
+            "expr": "source.Character_Update",
+            "displayName": "Character Update"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          },
+          {
+            "name": "countd_character",
+            "expr": "COUNT(DISTINCT source.character_id)",
+            "displayName": "Character Count"
+          },
+          {
+            "name": "avg_health_total",
+            "expr": "AVG(source.total_health)",
+            "displayName": "Average Health"
+          },
+          {
+            "name": "avg_health_front",
+            "expr": "AVG(source.front_health)",
+            "displayName": "Average Front Health"
+          },
+          {
+            "name": "avg_health_back",
+            "expr": "AVG(source.back_health)",
+            "displayName": "Average Back Health"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "5f73e2b1",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "b2abfbde",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "07739ab6",
+                  "fields": [
+                    {
+                      "name": "threat",
+                      "expression": "`threat`"
+                    },
+                    {
+                      "name": "measure(avg_health_total)",
+                      "expression": "MEASURE(`avg_health_total`)"
+                    },
+                    {
+                      "name": "measure(avg_health_front)",
+                      "expression": "MEASURE(`avg_health_front`)"
+                    },
+                    {
+                      "name": "measure(avg_health_back)",
+                      "expression": "MEASURE(`avg_health_back`)"
+                    },
+                    {
+                      "name": "measure(countd_character)",
+                      "expression": "MEASURE(`countd_character`)"
+                    }
+                  ],
+                  "cubeGroupingSets": {
+                    "sets": [
+                      {},
+                      {
+                        "fieldNames": [
+                          "threat"
+                        ]
+                      }
+                    ]
+                  },
+                  "disaggregated": false,
+                  "orders": [
+                    {
+                      "direction": "ASC",
+                      "expression": "`threat`"
+                    }
+                  ]
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pivot",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "threat"
+                  }
+                ],
+                "cell": {
+                  "type": "multi-cell",
+                  "fields": [
+                    {
+                      "fieldName": "measure(avg_health_total)",
+                      "cellType": "text"
+                    },
+                    {
+                      "fieldName": "measure(avg_health_front)",
+                      "cellType": "text"
+                    },
+                    {
+                      "fieldName": "measure(avg_health_back)",
+                      "cellType": "text"
+                    },
+                    {
+                      "fieldName": "measure(countd_character)",
+                      "cellType": "text"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "c04580dd",
+            "queries": [
+              {
+                "name": "dashboards/01f15332eb2b1ae9b160c39b75194219/datasets/01f15332f55a1017a804621b96564551_Character_Update",
+                "query": {
+                  "datasetName": "07739ab6",
+                  "fields": [
+                    {
+                      "name": "Character_Update",
+                      "expression": "`Character_Update`"
+                    },
+                    {
+                      "name": "Character_Update_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "Character_Update",
+                    "queryName": "dashboards/01f15332eb2b1ae9b160c39b75194219/datasets/01f15332f55a1017a804621b96564551_Character_Update"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 7,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "1ec17876",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "07739ab6",
+                  "fields": [
+                    {
+                      "name": "threat",
+                      "expression": "`threat`"
+                    },
+                    {
+                      "name": "total_health",
+                      "expression": "`total_health`"
+                    },
+                    {
+                      "name": "measure(countd_character)",
+                      "expression": "MEASURE(`countd_character`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "total_health",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(countd_character)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "threat",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": false
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 12,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
